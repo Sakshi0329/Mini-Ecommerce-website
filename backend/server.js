@@ -21,7 +21,7 @@ const app = express();
 app.use(
   cors({
     origin: [
-      "https://sakshi-al2z.onrender.com",
+      "https://mini-ecommerce-website-frontend.onrender.com",
       "http://localhost:5173",
       "http://localhost:3000"
     ],
