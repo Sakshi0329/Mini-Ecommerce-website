@@ -23,13 +23,13 @@ app.use(
     origin: [
       "https://mini-ecommerce-website-frontend.onrender.com",
       "http://localhost:5173",
-      "http://localhost:3000"
+      "http://localhost:3000",
     ],
     methods: ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"],
     allowedHeaders: ["Content-Type", "Authorization"],
     credentials: true,
-    optionsSuccessStatus: 200
-  })
+    optionsSuccessStatus: 200,
+  }),
 );
 
 // Body Parsers
