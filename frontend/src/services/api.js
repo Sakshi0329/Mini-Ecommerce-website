@@ -13,11 +13,13 @@ API.interceptors.request.use((req) => {
 });
 
 // Users/Auth Endpoints
-export const registerUser = (userData) => API.post("/api/users/register", userData);
+export const registerUser = (userData) =>
+  API.post("/api/users/register", userData);
 export const loginUser = (userData) => API.post("/api/users/login", userData);
 
 // OTP Verification Endpoint
-export const verifyOTP = (otpData) => API.post("/api/users/verify-otp", otpData);
+export const verifyOTP = (otpData) =>
+  API.post("/api/users/verify-otp", otpData);
 
 export const getProfile = () => API.get("/api/auth/profile");
 export const updateProfile = (data) => API.put("/api/auth/profile", data);
